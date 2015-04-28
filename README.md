@@ -1,8 +1,9 @@
-# This fork was created to make slight behaviour change to original functionality. Everything below this comment refers to the original code/functionality. This is my first ever activity on GitHub. If I have not taken care of copyright/license etc as expected please do point out so I can make changes/revert as appropriate
 # elevator.js
 Finally, a "back to top" button that behaves like a real elevator, by adding elevator music to quietly soothe the awkwardness that can ensue when being smoothly scrolled to the top of the screen.
 
 This is very serious stuff, [here's a demo](http://tholman.com/elevator.js)!
+
+### This fork was created to make slight behaviour change to original functionality. Everything below this comment refers to the original code/functionality. This is my first ever activity on GitHub. If I have not taken care of copyright/license etc as expected please do point out so I can make changes/revert as appropriate
 
 ### Instructions
 
