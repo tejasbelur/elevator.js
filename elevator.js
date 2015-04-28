@@ -43,11 +43,15 @@ var Elevator = (function() {
     };
 
     // Thanks Mr Penner - http://robertpenner.com/easing/
+    // To make scroll only stop like elevator and not start
+    //function easeInOutQuad( t, b, c, d ) {
     function easeInOutQuad( t, b, c, d ) {
         t /= d/2;
-        if (t < 1) return c/2*t*t + b;
-        t--;
-        return -c/2 * (t*(t-2) - 1) + b;
+    //    
+    //    if (t < 1) return c/2*t*t + b;
+    //    t--;
+    //    return -c/2 * (t*(t-2) - 1) + b;
+          return b * ((2-t)*(2-t)/4);
     };
 
     function extendParameters(options, defaults){
@@ -106,7 +110,9 @@ var Elevator = (function() {
         
         // No custom duration set, so we travel at pixels per millisecond. (0.75px per ms)
         if( !customDuration ) {
-            duration = (startPosition * 1.5);
+        //  1.5 seemed too slow
+        //  duration = (startPosition * 1.5);
+            duration = (startPosition * 0.6);
         }
 
         requestAnimationFrame( animateLoop );
